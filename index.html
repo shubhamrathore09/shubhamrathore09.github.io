@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <title>Portfolia</title>
 </head>
 <body>
-    <h1>hello</h1>
+    <div id=navbar>
+        <li>About</li>
+        <li>Project</li>
+        <li>Resume</li>
+        <li>Tech Stack</li>
+        <li>Summary</li>
+        <li>What i am doing</li>
+        <li>Github Analytics</li>
+        <li>Contact</li>
+    </div>
+
+    <div id="img">
+        <img class="image_pro" src="shubham.jpg" alt="there is img">
+    </div>
+    <div id="back">
+    <div id="name">
+        <h1 id="name_dynamic"></h1>
+        <H2>JAVA BACKEND DEVELOPER</H2>
+    </div>
+</div>
 </body>
 </html>
+<script>
+   let count=0;
+   let id=0;
+
+   let str="SHUBHAM RATHORE";
+   id=setInterval (function(){
+    let newstr=str[count];
+    if(count==14){
+        // count=0;
+        clearInterval(id);
+        // document.getElementById("name_dynamic").innerText=null;
+        
+    }
+    document.getElementById("name_dynamic").append(newstr);
+    count++;
+    
+   },200)
+</script>
