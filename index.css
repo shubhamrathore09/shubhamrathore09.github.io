@@ -7,28 +7,91 @@
 #navbar{
     display:  flex;
     justify-content: space-evenly;
+    font-size: 18px;
     padding: 10px 0px 10px 0px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     position: sticky;
     width: 100%;
     background-color: antiquewhite;
 }
-#navbar>li{
-    cursor: pointer;
-    padding: 5px 10px;
-    border-radius: 10px;
+#navbar>div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
-#navbar>li:hover{
-   
-    background-color: aqua;
+#navbar>div:nth-child(2)>li{
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    padding: 5px 20px;
+}
+#name_logo>label>i{
+    font-size: 25px;
+}
+.menu_div{
+    background-color: antiquewhite;
+}
+#menu{
+    font-size: 25px;
+    margin-left: 20px;
+    display: none;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+#slide_menu{
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 5px 0px;
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    width: 100%;
+    top: -100%;
+    transition: all .5s;
+}
+#slide_menu>li{
+    padding: 8px 10px;
+    width:auto;
+    margin: auto;
+}
+#slide_menu>li:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    width: auto;
+    margin: auto;
+    padding: 8px 20px;
+    border-radius: 30px;
+}
+#cencel{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+.name_color{
+    color: aqua;
+    
 }
 #back{
+  background-color:darkgray;
+  padding: 100px 0px;
+}
+#navbar>div>li:hover{
+    cursor: pointer;
+    background-color: aqua;
 
 }
 #img{
     width: 200px;
-   margin: auto;
-    margin-top: 100px;
+    margin: auto;
+    
     border-radius:100%;
 }
 .image_pro{
@@ -39,4 +102,46 @@
     margin: auto;
     text-align: center;
     margin-top: 20px;
+}
+.summary{
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+
+
+
+
+@media (max-width:1000px) and (min-width:600px){
+    #navbar{
+        font-size: 10px;
+    }
+    #img{
+        width: 150px;
+    }
+    #back{
+        font-size: 12px;
+    }
+    .summary{
+        font-size: 14px;
+    }
+}
+@media (max-width:699px) and (min-width:100px){
+    #navbar{
+        display: none;
+    }
+    #img{
+        width: 100px;
+    }
+    #back{
+        font-size: 10px;
+    }
+    #menu{
+        display: block;
+    }
+    .summary{
+        font-size: 14px;
+    }
 }

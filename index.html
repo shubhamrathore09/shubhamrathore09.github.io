@@ -5,10 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/b87712823b.js" crossorigin="anonymous"></script>
     <title>Portfolia</title>
 </head>
 <body>
     <div id=navbar>
+        <div id="name_logo">
+            <h1>SR</h1>
+          
+        </div>
+
+        <div>
+        <li>About</li>
+        <li>Project</li>
+        <li>Resume</li>
+        <li>Tech Stack</li>
+        <li>Summary</li>
+        <li>What i am doing</li>
+        <li>Github Analytics</li>
+        <li>Contact</li>
+        </div>
+    </div>
+    <div class="menu_div">
+    <label for="check" id="menu">
+        <i class="fa-solid fa-bars"></i>
+        <input type="checkbox" id="check" onclick="checkfun()">
+    </label>
+    </div>
+
+    <div id="slide_menu">
+        <div id="cencel" onclick="cencel()"><i class="fa-solid fa-xmark"></i></div>
         <li>About</li>
         <li>Project</li>
         <li>Resume</li>
@@ -19,32 +45,59 @@
         <li>Contact</li>
     </div>
 
-    <div id="img">
-        <img class="image_pro" src="shubham.jpg" alt="there is img">
-    </div>
+   
     <div id="back">
+
+        <div id="img">
+            <img class="image_pro" src="shubham.jpg" alt="there is img">
+        </div>
+
     <div id="name">
-        <h1 id="name_dynamic"></h1>
+        <h1 id="name_hello"></h1>
+        <h1 class="name_color">SHUBHAM RATHORE</h1>
         <H2>JAVA BACKEND DEVELOPER</H2>
+        <p class="summary">I'm an java Back-end Developer and I develop back-end.I enjoy 
+            turning complex problems into simple, beautiful
+             and intuitive designs. My job is to build project 
+             and develop to it, so that it is functional and 
+             user-friendly, I add personal touch to your product 
+             and make sure that is eye-catching and easy to use.
+              My aim is to bring across your message and identity
+               in the most creative way.</p>
     </div>
 </div>
+
+
+
+
+
+
+
 </body>
 </html>
 <script>
    let count=0;
    let id=0;
 
-   let str="SHUBHAM RATHORE";
+   let str="Hello I'Am";
    id=setInterval (function(){
     let newstr=str[count];
-    if(count==14){
-        // count=0;
+    if(count==9){
+        count=0;
         clearInterval(id);
         // document.getElementById("name_dynamic").innerText=null;
-        
     }
-    document.getElementById("name_dynamic").append(newstr);
+    document.getElementById("name_hello").append(newstr);
     count++;
     
-   },200)
+   },200);
+
+   function checkfun(){
+    document.getElementById("slide_menu").style.top="0%"
+  }
+
+  function cencel(){
+    document.getElementById("slide_menu").style.top="-100%"
+  }
+
 </script>
