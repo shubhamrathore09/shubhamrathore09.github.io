@@ -326,17 +326,24 @@ h1{
         font-size: 15px;
     }
     #project1{
+        
         flex-direction: column;
     }
     .project_img{
         width: 100%;
         
     }
+    #project{
+        width: 100%;
+    }
     #project *{
         font-size: 14px;
     }
     h1{
         font-size: 20px;
+    }
+    #resume_div{
+        width: 100%;
     }
     .education{
         flex-direction: column;
@@ -352,8 +359,13 @@ h1{
     .resume_button_mar{
         margin-left: 70%;
     }
+    #github_ana{
+        width: 100%;
+    }
     #skills{
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: auto auto auto auto;
+        width: 100%;
     }
+
 }
