@@ -47,7 +47,7 @@
     <div id="name">
         <h1 id="name_hello"></h1>
         <h1 class="name_color">SHUBHAM RATHORE</h1>
-        <H2>JAVA BACKEND DEVELOPER</H2>
+        <H2>JAVA BACK-END DEVELOPER</H2>
         <p class="summary">Adjustable team player to give the best in any situation. A passionate Java Backend Developer with
             proficiency in JavaScript, Java, HTML, CSS, Data Structure, and Algorithms. willing to use them to build
             custom projects. highly adaptive to learning new skills and techniques. Looking forward to working as a Java
@@ -139,7 +139,7 @@
     <div class="education">
 
         <div class="education_title">
-            <h3>Java Back-end Developer</h3>
+            <h3>Java Back-End Developer</h3>
             <p>05-2022 - Present</p>
         </div>
 
@@ -242,6 +242,33 @@
 </DIV>
 </div>
 
+<hr>
+
+<div id="contact">
+
+    <div class="contacts">
+        <div class="cont_detail">
+            <p>Bhopal, Madhya Pradesh, India</p>
+            <p><i class="fa-solid fa-phone"></i><a href="tel:918357888995" class="cont_phone">+918357888995</a></p>
+            <p><i class="fa-solid fa-envelope"></i><a href="mailto:Rathoreshubham706@gmail.com" class="cont_phone">Rathoreshubham706@gmail.com</a></p>
+
+        </div>
+
+        <div class="cont_msg">
+            <input type="text" id="cont_name" placeholder="Full Name">
+            <input type="number" name="" id="cont_number" placeholder="Phone">
+            <br>
+            <input type="email" name="" id="cont_email" placeholder="Email">
+            <br>
+            <textarea name="" id="msg" cols="30" rows="10" placeholder="massege"></textarea>
+            <br>
+            <button onclick="msg_submit()">Contact us</button>
+        </div>
+        <!-- <div class="cont_loc"></div> -->
+    </div>
+
+</div>
+
 
 
 
@@ -275,6 +302,11 @@
 
   function cencel(){
     document.getElementById("slide_menu").style.top="-100%"
+  }
+
+  function msg_submit(){
+    let msg=document.getElementById("msg").value;
+    console.log(msg)
   }
 
 </script>
