@@ -236,7 +236,7 @@ hr{
    color: rgb(131, 25, 6);
 }
 #github_ana{
-    width: 80%;
+    /* width: 80%; */
     margin: auto;
     text-align: center;
 }
@@ -251,6 +251,12 @@ hr{
 #github_ana>img{
     width: 100%;
     margin-top: 20px;
+}
+#gitCalender{
+    width: 100%;
+}
+.calendar{
+    width: 80%;
 }
 .resume_button_mar{
     margin-left: 90%;
