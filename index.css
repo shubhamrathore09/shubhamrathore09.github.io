@@ -344,7 +344,15 @@ input{
     /* height: 20px; */
 }
 
-
+.cont_loc{
+    font-size: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.cont_loc>a>i{
+    color: black;
+}
 
 
 
@@ -382,7 +390,7 @@ input{
         display: none;
     }
     #img{
-        width: 120px;
+        width: 170px;
     }
     #back{
         font-size: 12px;
