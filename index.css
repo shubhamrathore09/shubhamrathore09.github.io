@@ -383,6 +383,11 @@ input{
     #project>h1{
         font-size: 22px;
     }
+    .innerDiv{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 
 }
 @media (max-width:699px) and (min-width:100px){
@@ -395,6 +400,11 @@ input{
     #back{
         font-size: 12px;
         width: 100%;
+    }
+    .innerDiv{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
     #menu{
         display: block;
