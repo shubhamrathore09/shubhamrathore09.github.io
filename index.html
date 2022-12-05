@@ -338,7 +338,7 @@
    let id=0;
 
    let str="Hello I'Am";
-
+   function demo(){
    id=setInterval (function(){
     let newstr=str[count];
     if(count==9){
@@ -348,8 +348,15 @@
     }
     document.getElementById("name_hello").append(newstr);
     count++;
-    
-   },200);
+   },100);
+}
+
+   setInterval(function(){
+    demo();
+    count=0;
+    document.getElementById("name_hello").innerText="";
+   },2000);
+   
 
 
    function checkfun(){

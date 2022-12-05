@@ -42,6 +42,9 @@ html{
   padding: 10px;
   cursor: pointer;
 }
+#name_hello{
+    height: 40px;
+}
 .name_title>abbr{
     text-decoration: none;
 }
