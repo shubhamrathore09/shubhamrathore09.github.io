@@ -264,16 +264,17 @@
 
       <div>
             <a href="https://github.com/shubhamrathore09">
-                    <img src="https://github-readme-stats.vercel.app/api?username=shubhamrathore09&count_private=true&show_icons=true"/>
+                    <img src="https://github-readme-stats.vercel.app/api?username=shubhamrathore09&show_icons=true&theme=radical"/>
                 </a>
       </div>
 
+      
+      </div>
       <div>
         <a href="https://github.com/shubhamrathore09">
-            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shubhamrathore09&show_icons=true&count_private=true"/>
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shubhamrathore09"/>
         </a>
        </div>
-      </div>
     
 
 
@@ -319,24 +320,56 @@
 
 
         </div>
+
         <div class="cont_msg">
-            <input type="text" id="cont_name" placeholder="Full Name">
+            <!-- <input type="text" id="cont_name" placeholder="Full Name">
             <input type="number" name="" id="cont_number" placeholder="Phone">
             <br>
             <input type="email" name="" id="cont_email" placeholder="Email">
             <br>
             <textarea name="" id="msg" cols="30" rows="10" placeholder="massege"></textarea>
             <br>
-            <button onclick="msg_submit()">Contact us</button>
+            <button onclick="sendMail()">Contact us</button> -->
+
+            <form action="https://getform.io/f/286687fd-4476-4aa2-bdad-fcd79973b958" method="POST" class="form_msg">
+                         
+
+
+                    <div>
+                        <input type="text" name="name" placeholder="Your name"><br>
+                        <input type="email" name="email" placeholder="Your email"><br>
+                        <input type="number" name="number" placeholder="Your mobile No."><br>
+                    </div>
+
+                    <div>
+                        <div><textarea id="textarea" rows="5" placeholder="Message"></textarea>
+                          <br>  <button type="submit" class="form_button">Send</button>
+                    </div>
+               
+            </form>
+
         </div>
        
 
     </div>
 
+
 </div>
 </body>
 </html>
+
 <script>
+    function sendMail(){
+        document.getElementById("cont_name").value=null;
+        document.getElementById("cont_number").value=null;
+        document.getElementById("cont_email").value=null;
+        document.getElementById("msg").value=null;
+    }
+</script>
+
+<script>
+
+
    let count=0;
    let id=0;
 

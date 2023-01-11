@@ -301,7 +301,7 @@ h1{
     display: flex;
     width: 80%;
     margin: auto;
-    justify-content: space-evenly;
+    justify-content:space-around;
     padding-bottom: 50px;
 }
 .cont_detail{
@@ -321,40 +321,8 @@ h1{
 .cont_phone:hover{
     text-decoration: underline;
 }
-input{
-    width: 43%;
-    padding: 10px 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 10px;
-    outline: none;
-}
-#cont_email{
-    width: 94%;
-}
-#enter_msg{
-    height: 100px;
-    width: 94%;
-    text-align: start;
-    
-}
-#msg{
-    width: 90%;
-    padding: 5%;
-    border-radius: 20px;
-}
-.cont_msg>button{
-    width: 100%;
-    padding: 5px 10px;
-    margin-top: 10px;
-    border-radius: 20px;
-    cursor: pointer;
-    border: none;
-    background-color: rgb(134, 65, 65);
-    font-size: 20px;
-    font-weight: bold;
-    /* height: 20px; */
-}
+
+
 
 .cont_loc{
     font-size: 40px;
@@ -364,6 +332,44 @@ input{
 }
 .cont_loc>a>i{
     color: black;
+}
+.cont_msg{
+    width: 50%;
+}
+.form_msg{
+    /* padding: 0px 50px; */
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content:space-evenly;
+}
+.form_button>div{
+    width: 50%;
+}
+.form_msg>div>input{
+    width: 100%;
+    padding: 10px 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.form_button{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    
+}
+#textarea{
+    width: 100%;
+    margin-top: 4px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    outline: none;
 }
 
 
@@ -398,6 +404,9 @@ input{
     .innerDiv{
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .form_msg{
         flex-direction: column;
     }
 
@@ -495,6 +504,10 @@ input{
     }
     .cont_msg{
         width: 100%;
+    }
+
+    .form_msg{
+        flex-direction: column;
     }
     
 
