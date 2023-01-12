@@ -275,6 +275,11 @@ hr{
     gap: 60px 10px;
     text-align: center;
 }
+.innerDiv{
+    width: 80%;
+    flex-wrap: wrap;
+    margin: auto;
+}
 
 abbr{
     text-decoration: none;
@@ -375,6 +380,7 @@ h1{
 
 
 
+
 @media (max-width:1000px) and (min-width:700px){
     #navbar{
         font-size: 10px;
@@ -436,6 +442,7 @@ h1{
         flex-direction: column;
         width: 100%;
     }
+   
     .innerDiv>div>a>img{
         width: 100%;
     }
