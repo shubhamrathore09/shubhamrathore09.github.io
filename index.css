@@ -163,6 +163,9 @@ html{
     margin-top: 20px;
     cursor: pointer;
 }
+.tech{
+    font-weight: bold;
+}
 #project{
     width: 70%;
     margin: auto;
